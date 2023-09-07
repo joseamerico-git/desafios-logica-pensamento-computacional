@@ -1,7 +1,12 @@
+package java;
 import java.util.Scanner;
 
 /**
  * Desafio
+ * Calcular o salário líquido com base nas aliquotas passadas:
+ * se o salário entre R$    0.00 e R$   1100.00      -  0.5%
+ * se o salário entre R$ 1100.01 até R$ 2500.00      - 0.10%
+ * se salário > que   R$ 2500.00                     - 0.15%
  */
 public class Desafio {
     public static void main(String[] args) {
@@ -21,7 +26,7 @@ public class Desafio {
         }
 
         float saida = valorSalario - valorImposto + valorBeneficios;
-
+        System.out.println("               Utilizando if - else                        ");
         System.out.println("******************Folha de Pagamento***********************");
         System.out.println((String.format("%s %.2f", "Salario Bruto ", valorSalario)));
         System.out.println((String.format("%s %.2f", "Valor de Benefícios ", valorBeneficios)));
